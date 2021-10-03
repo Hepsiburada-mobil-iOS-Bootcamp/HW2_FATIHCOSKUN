@@ -10,6 +10,8 @@
 		046500002706549300587038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0465FFFE2706549300587038 /* Main.storyboard */; };
 		046500022706549C00587038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046500012706549C00587038 /* Assets.xcassets */; };
 		046500052706549C00587038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046500032706549C00587038 /* LaunchScreen.storyboard */; };
+		0465001027079AEE00587038 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465000F27079AEE00587038 /* ActionButton.swift */; };
+		046500142707BE9F00587038 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046500132707BE9F00587038 /* BaseView.swift */; };
 		0465FFF92706549300587038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465FFF82706549300587038 /* AppDelegate.swift */; };
 		0465FFFB2706549300587038 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465FFFA2706549300587038 /* SceneDelegate.swift */; };
 		0465FFFD2706549300587038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465FFFC2706549300587038 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 		046500012706549C00587038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046500042706549C00587038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046500062706549C00587038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0465000F27079AEE00587038 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		046500132707BE9F00587038 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0465FFF52706549200587038 /* ios_bc_week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_bc_week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465FFF82706549300587038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0465FFFA2706549300587038 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0465000C270799F700587038 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0465000E27079AB700587038 /* ActionButtonComponent */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0465000E27079AB700587038 /* ActionButtonComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0465000F27079AEE00587038 /* ActionButton.swift */,
+			);
+			path = ActionButtonComponent;
+			sourceTree = "<group>";
+		};
+		046500112707BE0B00587038 /* BaseComponent */ = {
+			isa = PBXGroup;
+			children = (
+				046500132707BE9F00587038 /* BaseView.swift */,
+			);
+			name = BaseComponent;
+			sourceTree = "<group>";
+		};
 		0465FFEC2706549200587038 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +84,8 @@
 		0465FFF72706549200587038 /* ios_bc_week2 */ = {
 			isa = PBXGroup;
 			children = (
+				046500112707BE0B00587038 /* BaseComponent */,
+				0465000C270799F700587038 /* Components */,
 				0465FFF82706549300587038 /* AppDelegate.swift */,
 				0465FFFA2706549300587038 /* SceneDelegate.swift */,
 				0465FFFC2706549300587038 /* ViewController.swift */,
@@ -140,7 +170,9 @@
 			files = (
 				0465FFFD2706549300587038 /* ViewController.swift in Sources */,
 				0465FFF92706549300587038 /* AppDelegate.swift in Sources */,
+				046500142707BE9F00587038 /* BaseView.swift in Sources */,
 				0465FFFB2706549300587038 /* SceneDelegate.swift in Sources */,
+				0465001027079AEE00587038 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
